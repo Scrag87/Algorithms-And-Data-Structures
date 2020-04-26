@@ -23,6 +23,7 @@
       </plugins>
     </pluginManagement>
   </build>
+
   <dependencies>
   <dependency>
     <artifactId>junit</artifactId>
@@ -30,6 +31,6 @@
     <scope>test</scope>
     <version>4.13</version>
   </dependency>
-
+  </dependencies>
 
 </project>
