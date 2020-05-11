@@ -2,17 +2,21 @@ package lesson3.queue;
 
 public interface Queue<E> {
 
-    boolean insertTail(E value);
+  boolean insert(E value);
 
-    E removeHead();
+  E remove();
 
-    E peekFront();
+  boolean insertTail(E value);
 
-    int size();
+  E removeHead();
 
-    default boolean isEmpty() {
-        return size() == 0;
-    }
+  E peekFront();
+
+  int size();
+
+  default boolean isEmpty() {
+    return size() == 0;
+  }
 
     boolean isFull();
 }

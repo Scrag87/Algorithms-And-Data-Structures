@@ -1,9 +1,8 @@
 package lesson2.homework;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
+import java.util.Collection;
 import java.util.Random;
-import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 public class PerformanceTester {
@@ -61,10 +60,26 @@ public class PerformanceTester {
     }
   }
 
+//  public void addElements(ArrayList list, int iterations, int times) {
+//    beforeTest();
+//
+//    for (int i = 1; i <= times; i++) {
+//      list.clear();
+//      int x = 0;
+//      start = System.nanoTime();
+//      while (x <= iterations) {
+//        list.add(getRandomIntValue());
+//        x++;
+//      }
+//      end = System.nanoTime();
+//      saveResult(getResult());
+//    }
+//    finalResult(times);
+//    System.out.println(list.size());
+//  }
 
-  public void addElements(ArrayList list, int iterations, int times) {
+  public void addElements(Collection<Integer> list, int iterations, int times) {
     beforeTest();
-
     for (int i = 1; i <= times; i++) {
       list.clear();
       int x = 0;
@@ -76,46 +91,29 @@ public class PerformanceTester {
       end = System.nanoTime();
       saveResult(getResult());
     }
-    finalResult(times);
-    System.out.println(list.size());
-  }
-
-  public void addElements(LinkedList<Integer> list, int iterations, int times) {
-    beforeTest();
-    for (int i = 1; i <= times; i++) {
-      list.clear();
-      int x = 0;
-      start = System.nanoTime();
-      while (x <= iterations) {
-        list.add(getRandomIntValue());
-        x++;
-      }
-      end = System.nanoTime();
-      saveResult(getResult());
-    }
     System.out.println(list.size());
     finalResult(times);
   }
 
-  public void addElements(Set<Integer> set, int iterations, int times) {
-    if (times <= 0 || iterations <= 0) {
-      throw new IllegalArgumentException("Wrong Parameters");
-    }
-    beforeTest();
-    for (int i = 1; i <= times; i++) {
-      set.clear();
-      int x = 0;
-      start = System.nanoTime();
-      while (x <= iterations) {
-        set.add(getRandomIntValue());
-        x++;
-      }
-      end = System.nanoTime();
-      saveResult(getResult());
-    }
-    finalResult(times);
-    System.out.println(set.size());
-  }
+//  public void addElements(Set<Integer> set, int iterations, int times) {
+//    if (times <= 0 || iterations <= 0) {
+//      throw new IllegalArgumentException("Wrong Parameters");
+//    }
+//    beforeTest();
+//    for (int i = 1; i <= times; i++) {
+//      set.clear();
+//      int x = 0;
+//      start = System.nanoTime();
+//      while (x <= iterations) {
+//        set.add(getRandomIntValue());
+//        x++;
+//      }
+//      end = System.nanoTime();
+//      saveResult(getResult());
+//    }
+//    finalResult(times);
+//    System.out.println(set.size());
+//  }
 
   private void finalResult(int count) {
     long tmp = 0;

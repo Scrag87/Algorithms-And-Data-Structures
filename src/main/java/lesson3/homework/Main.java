@@ -63,6 +63,9 @@ public class Main {
 
   //O(n^2)
   private static void task2(String message) {
+
+    // System.out.println(new StringBuilder(message).reverse());
+
     Stack<Character> stack = new StackImpl<>(message.length());
     for (int i = 0; i < message.length(); i++) {
       stack.push(message.charAt(i));

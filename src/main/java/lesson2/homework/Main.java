@@ -17,7 +17,7 @@ public class Main {
     System.out.println();
 
 
-   // Array<Integer> data = new ImplArray<>();
+// Array<Integer> data = new ImplArray<>();
 
     Sort.bubbleSort(testArray);
     Sort.sortInsert(testArray);
@@ -42,35 +42,31 @@ public class Main {
 //Test general result is: 3926ms in selectionSort
 //Test general result is: 13ms in nativeSort
 
-/*
     PerformanceTester performanceTester = new PerformanceTester();
     ArrayList<Integer> arrayList = new ArrayList<>();
     HashSet<Integer> hashSet = new HashSet<>();
     TreeSet<Integer> treeSet = new TreeSet<>();
-    LinkedList<Integer> linkedList =new LinkedList<>();
+    LinkedList<Integer> linkedList = new LinkedList<>();
 
-
-    System.out.println(hashSet.getClass().getSimpleName());
-    performanceTester.measureStart();
-    performanceTester.addElements(hashSet, 100000, 30);
-    performanceTester.measureFinish();
-
-    System.out.println(arrayList.getClass().getSimpleName());
-    performanceTester.measureStart();
-    performanceTester.addElements(arrayList, 100000, 30);
-    performanceTester.measureFinish();
-
-    System.out.println(treeSet.getClass().getSimpleName());
-    performanceTester.measureStart();
-    performanceTester.addElements(treeSet, 100000, 30);
-    performanceTester.measureFinish();
-
-    System.out.println(linkedList.getClass().getSimpleName());
-    performanceTester.measureStart();
-    performanceTester.addElements(linkedList, 100000, 30);
-    performanceTester.measureFinish();
-
-*/
+//    System.out.println(hashSet.getClass().getSimpleName());
+//    performanceTester.measureStart();
+//    performanceTester.addElements(hashSet, 100000, 30);
+//    performanceTester.measureFinish();
+//
+//    System.out.println(arrayList.getClass().getSimpleName());
+//    performanceTester.measureStart();
+//    performanceTester.addElements(arrayList, 100000, 30);
+//    performanceTester.measureFinish();
+//
+//    System.out.println(treeSet.getClass().getSimpleName());
+//    performanceTester.measureStart();
+//    performanceTester.addElements(treeSet, 100000, 30);
+//    performanceTester.measureFinish();
+//
+//    System.out.println(linkedList.getClass().getSimpleName());
+//    performanceTester.measureStart();
+//    performanceTester.addElements(linkedList, 100000, 30);
+//    performanceTester.measureFinish();
 
 //        HashSet
 //    final average Result :11ms
