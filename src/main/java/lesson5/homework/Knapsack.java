@@ -17,7 +17,7 @@ public class Knapsack {
   private int getSumWorthFromList(List<Item> list) {
     int tmp = 0;
     for (Item item : list) {
-      tmp += item.worth;
+      tmp += item.getWorth();
     }
     return tmp;
   }
@@ -25,7 +25,7 @@ public class Knapsack {
   private int getSumWeightFromList(List<Item> list) {
     int tmp = 0;
     for (Item item : list) {
-      tmp += item.weight;
+      tmp += item.getWeight();
     }
     return tmp;
   }

@@ -3,9 +3,21 @@ package lesson5.homework;
 
 public class Item {
 
-  String name;
-  int worth;
-  int weight;
+  private final String name;
+  private final int worth;
+  private final int weight;
+
+  public String getName() {
+    return name;
+  }
+
+  public int getWorth() {
+    return worth;
+  }
+
+  public int getWeight() {
+    return weight;
+  }
 
   public Item(String name, int worth, int weight) {
     this.name = name;
